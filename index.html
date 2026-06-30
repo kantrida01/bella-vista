@@ -974,6 +974,71 @@ h3 {
   }
 }
 </style>
+<style>
+/* HANDY-MENÜ FIX:
+   Die Navigation wird auf kleinen Bildschirmen nicht mehr ausgeblendet. */
+@media (max-width: 950px) {
+  .nav {
+    grid-template-columns: 220px 1fr !important;
+    align-items: start !important;
+    gap: 18px !important;
+    padding: 22px 7vw !important;
+  }
+
+  .links {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: flex-end !important;
+    align-items: center !important;
+    gap: 10px 18px !important;
+    font-size: 11px !important;
+    line-height: 1.4 !important;
+    letter-spacing: 1.2px !important;
+  }
+
+  .links a {
+    color: white !important;
+    opacity: .96 !important;
+    white-space: nowrap !important;
+    padding-bottom: 5px !important;
+  }
+
+  .links a:first-child {
+    color: var(--gold) !important;
+    border-bottom: 1px solid var(--gold) !important;
+  }
+}
+
+@media (max-width: 560px) {
+  .nav {
+    grid-template-columns: 190px 1fr !important;
+    padding: 18px 5vw !important;
+    gap: 12px !important;
+  }
+
+  .logo-circle {
+    width: 62px !important;
+    height: 62px !important;
+    font-size: 29px !important;
+  }
+
+  .logo {
+    font-size: 12px !important;
+  }
+
+  .logo small {
+    font-size: 8px !important;
+    letter-spacing: 3px !important;
+  }
+
+  .links {
+    justify-content: flex-end !important;
+    gap: 8px 12px !important;
+    font-size: 10px !important;
+    letter-spacing: 1px !important;
+  }
+}
+</style>
 </head>
 <body>
 <header class="hero" id="start">
