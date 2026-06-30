@@ -861,6 +861,119 @@ h3 {
 }
 
 </style>
+<style>
+/* BELLA VISTA – kompakte Ausstattung */
+.bv-amenities {
+  padding: 54px 7vw 66px;
+  max-width: 1280px;
+  margin: auto;
+}
+
+.bv-amenities h2 {
+  font-family: Georgia, serif;
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: .5px;
+  margin: 0 0 14px;
+  color: var(--navy, #0e2035);
+}
+
+.bv-amenities-lead {
+  margin: 0 0 26px;
+  max-width: 760px;
+  font-size: 17px;
+  line-height: 1.7;
+  color: var(--muted, #69707a);
+}
+
+.bv-amenities-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.bv-amenity-card {
+  background: linear-gradient(180deg, #fffdfa 0%, #f7f1e8 100%);
+  border: 1px solid rgba(201,162,92,.30);
+  border-radius: 16px;
+  padding: 18px 18px 16px;
+  box-shadow: 0 14px 28px rgba(15,32,53,.07);
+}
+
+.bv-amenity-title {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  margin-bottom: 12px;
+}
+
+.bv-amenity-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  flex: 0 0 36px;
+  background: rgba(201,162,92,.14);
+  color: var(--gold, #c9a25c);
+}
+
+.bv-amenity-icon svg {
+  width: 19px;
+  height: 19px;
+  stroke: currentColor;
+}
+
+.bv-amenity-title h3 {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.25;
+  font-weight: 800;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  color: var(--navy, #0e2035);
+}
+
+.bv-amenity-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 7px;
+}
+
+.bv-amenity-list li {
+  position: relative;
+  padding-left: 20px;
+  font-size: 14.5px;
+  line-height: 1.45;
+  color: #48515b;
+}
+
+.bv-amenity-list li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--gold, #c9a25c);
+  font-weight: 800;
+}
+
+@media (max-width: 980px) {
+  .bv-amenities-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 620px) {
+  .bv-amenities {
+    padding: 44px 7vw 52px;
+  }
+  .bv-amenities-grid {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
 </head>
 <body>
 <header class="hero" id="start">
@@ -872,6 +985,7 @@ h3 {
 </div>
 <div class="links">
 <a href="#wohnung">Die Wohnung</a>
+<a href="#ausstattung">Ausstattung</a>
 <a href="#lage&umgebung">Lage & Umgebung</a>
 <a href="#kontakt">Kontakt</a>
 </div>
@@ -940,6 +1054,119 @@ h3 {
     </div>
 
 </div>
+</section>
+<section class="bv-amenities" id="ausstattung">
+  <h2>AUSSTATTUNG</h2>
+  <p class="bv-amenities-lead">Kompakt zusammengefasst: die wichtigsten Ausstattungsdetails der Wohnung.</p>
+
+  <div class="bv-amenities-grid">
+
+    <div class="bv-amenity-card">
+      <div class="bv-amenity-title">
+        <span class="bv-amenity-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 6h16"/><path d="M6 6v13h12V6"/><path d="M9 10h6"/><path d="M9 14h6"/>
+          </svg>
+        </span>
+        <h3>Küche</h3>
+      </div>
+      <ul class="bv-amenity-list">
+        <li>Esstisch</li>
+        <li>Herdplatte, Backofen</li>
+        <li>Spülmaschine, Kühlschrank, Spüle</li>
+        <li>Kaffeemaschine, Toaster, Wasserkocher</li>
+        <li>Küchenutensilien</li>
+      </ul>
+    </div>
+
+    <div class="bv-amenity-card">
+      <div class="bv-amenity-title">
+        <span class="bv-amenity-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 12V9a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v3"/><path d="M3 12h18v4H3z"/><path d="M6 16v2"/><path d="M18 16v2"/>
+          </svg>
+        </span>
+        <h3>Wohnbereich</h3>
+      </div>
+      <ul class="bv-amenity-list">
+        <li>Sitzbereich, Sofa mit Schlaffunktion</li>
+        <li>Arbeitsplatz</li>
+        <li>Kaminofen mit Sichtfeuer (nur im Winter)</li>
+        <li>Loungesessel, Sitz- und Liegefuton</li>
+        <li>Beistelltisch / Ablagetisch</li>
+      </ul>
+    </div>
+
+    <div class="bv-amenity-card">
+      <div class="bv-amenity-title">
+        <span class="bv-amenity-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 12h18"/><path d="M5 12V8a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v4"/><path d="M4 12v5"/><path d="M20 12v5"/><path d="M8 9h8"/>
+          </svg>
+        </span>
+        <h3>Schlafen</h3>
+      </div>
+      <ul class="bv-amenity-list">
+        <li>Kingsize-Doppelbett 180 × 200 cm mit zwei Einzelmatratzen</li>
+        <li>2 Einzelbetten je 80 × 200 cm</li>
+        <li>Bettwäsche</li>
+        <li>Offene Garderobe mit Kleiderstange</li>
+      </ul>
+    </div>
+
+    <div class="bv-amenity-card">
+      <div class="bv-amenity-title">
+        <span class="bv-amenity-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M7 4h10"/><path d="M8 4v6a4 4 0 0 0 8 0V4"/><path d="M6 20h12"/><path d="M12 14v6"/>
+          </svg>
+        </span>
+        <h3>Bad</h3>
+      </div>
+      <ul class="bv-amenity-list">
+        <li>Bodengleiche Regendusche</li>
+        <li>Waschmaschine</li>
+        <li>Handtücher, Kosmetikspiegel</li>
+        <li>WC, Föhn</li>
+      </ul>
+    </div>
+
+    <div class="bv-amenity-card">
+      <div class="bv-amenity-title">
+        <span class="bv-amenity-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 19V9"/><path d="M20 19V9"/><path d="M3 19h18"/><path d="M6 9l2-4h8l2 4"/><path d="M8 13h8"/>
+          </svg>
+        </span>
+        <h3>Terrasse</h3>
+      </div>
+      <ul class="bv-amenity-list">
+        <li>Gartenmöbel</li>
+        <li>Esstisch</li>
+        <li>Morgensonne</li>
+        <li>Ab mittags Schatten</li>
+      </ul>
+    </div>
+
+    <div class="bv-amenity-card">
+      <div class="bv-amenity-title">
+        <span class="bv-amenity-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 12.5a10 10 0 0 1 14 0"/><path d="M8.5 16a5 5 0 0 1 7 0"/><path d="M12 19h.01"/><path d="M4 4l16 16"/>
+          </svg>
+        </span>
+        <h3>Komfort & Sonstiges</h3>
+      </div>
+      <ul class="bv-amenity-list">
+        <li>WLAN inklusive</li>
+        <li>Parken vor dem Haus</li>
+        <li>Wohnung nur über Treppe zugänglich</li>
+        <li>Klimaanlage</li>
+        <li>Nichtraucherunterkunft, Rauchmelder</li>
+      </ul>
+    </div>
+
+  </div>
 </section>
 <section class="section" id="lage&umgebung">
 
